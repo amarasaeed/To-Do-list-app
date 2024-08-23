@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
+  
 }
 .container{
     background:linear-gradient(135deg, blue,purple);
@@ -14,7 +15,7 @@
     width: 100%;
     max-width: 540px;
     margin: 100px auto 20px;
-    padding: 40px 30px 70px;
+    padding: 40px 30px 60px;
     border-radius: 10px;
     background: white;
 }
@@ -96,4 +97,53 @@ ul li span{
 }
 ul li span:hover{
     background: #edeef0;
+}
+@media(max-width:375px){
+    .input{
+        background:#edeef0 ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10px;
+        margin-bottom: 25px;
+        border-radius: 30px;
+    }
+    button{
+        border: none;
+        padding: 16px 30px;
+        font-size: 16px;
+      background: #ff5945;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 40px;
+    }
+}
+@media(max-width:320px){
+    .to-do-app{
+        width: 100%;
+        max-width: 540px;
+        margin: 100px auto 20px;
+        padding: 40px 10px 60px;
+        border-radius: 10px;
+        background: white;
+    }
+    .input{
+        background:#edeef0 ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0px;
+        margin-bottom: 25px;
+        border-radius: 30px;
+    }
+   
+    button{
+        border: none;
+        padding: 16px 20px;
+        font-size: 16px;
+      background: #ff5945;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 40px;
+    }
 }
